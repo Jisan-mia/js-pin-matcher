@@ -21,8 +21,8 @@ body{
 /*this is flex box divs*/
 .flex-box-div{
 	width: 400px;
-	height: 450px;
-	margin:15px 30px 5px 30px;
+	height: 460px;
+	margin:20px 30px 15px 30px;
 	/*background-color: #30336b;*/
 	background-color: #686de0;
 	padding: 20px;
@@ -127,7 +127,7 @@ body{
 	text-align: center;
 	background-color:#686de0 ;
 	/*display: inline-block;*/
-	width: 460px;
+	width: 400px;
 	margin: 0 auto;
 	margin-top: 5px;
 	margin-bottom: 10px;
