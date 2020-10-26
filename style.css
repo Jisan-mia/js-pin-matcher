@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto:wght@500&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+body{
+	
+	background-color: #445194;
+	color: #DFDFEF;
+}
+.container{
+}
+.flex-box-container{
+	display: flex;
+	justify-content: center;	
+	flex-wrap: wrap;
+
+}
+/*this is flex box divs*/
+.flex-box-div{
+	width: 400px;
+	height: 450px;
+	margin:15px 30px 5px 30px;
+	/*background-color: #30336b;*/
+	background-color: #686de0;
+	padding: 20px;
+	border-radius: 10px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: space-around;
+	position: relative;
+}
+
+
+/*display input*/
+.display{
+	padding: 10px;
+	border-radius: 4px;
+	outline: none;
+	background-color: #7D7FFF;
+	border: 1px solid #7DA0FD;
+	font-size: 16px;
+	color: #DFDFEF;
+	text-align: center;
+}
+
+.flex-box-div .pin-mathcer-text{
+	color: rgba(255, 255, 255, 0.25);
+	font-weight: 400;
+	font-size: 50px;
+	position: absolute;
+	top: 5%;
+	right: 0;
+	left: -80%;
+	margin-left: -25px;
+	transform: rotate(-90deg);
+}
+
+/*Pin generator button*/
+.generator-btn{
+	margin: auto auto;
+	border: none;
+	outline: none;
+	height: 180px;
+	width: 180px;
+	border-radius: 50%;
+	padding: 50px;
+	background-color: #33d9b2;
+	color: rgba(255, 255, 255, 0.75);
+	box-shadow:  9px 9px 26px #33d9b2, 
+             -5px -5px 26px #33d9b2;
+	font-size: 1.2rem;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+/* all the pad buttons*/
+.all-pad-buttons{
+	display: grid;
+    grid-template-columns: repeat(3, 120px);
+    margin:15px 20px;
+}
+
+.all-pad-buttons .pad-btn{
+	width: 120px;
+	height: 80px;
+	font-size: 1.8rem;
+	background-color: #686de0;
+	border: 1px solid #7DA0FD;
+	color: #DFDFEF;
+	cursor: pointer;
+}
+
+/*Submit button/ final button*/
+.submit-btn{
+	border: none;
+	outline: none;
+	border-radius: 4px;
+	background-color: #33d9b2;
+	padding: 7px 0;
+	cursor: pointer;
+	color: rgba(255, 255, 255, 0.95);
+	width: 90%;
+	margin: 0 auto;
+	font-size: 17px;
+}
+
+.submit-btn:hover{
+	box-shadow: 0 0 10px 5px #32d9a1
+}
+.try-left{
+	text-align: center;
+	color: #ff7979;
+	margin-top: 8px
+}
+.all-pad-buttons .pad-btn:hover{
+	background-color: #7D7FFF;
+}
+
+
+/*right or wrong message*/
+.message{
+	text-align: center;
+	background-color:#686de0 ;
+	/*display: inline-block;*/
+	width: 460px;
+	margin: 0 auto;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	border-radius: 15px;
+	padding:2px 5px;
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.96);
+}
+
+#pin-matched-msg,
+#pin-wrong-meg{
+	margin-top: 15px;
+	display: none;
+}
+
+/*disabled button*/
+.disable-btn{
+	cursor: not-allowed;
+	pointer-events: none;;
+
+	color: rgba(255, 255, 255, 0.75);
+	background-color: mediumseagreen;
+}
+
+@media (max-width: 500px){
+	.container{
+		width: 100vh;
+		height: 100vh
+	}
+}

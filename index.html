@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JavaScript Pin Matcher</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+	<div class="container">
+		<div class="flex-box-container">
+			<div class="flex-box-div">
+				<input id="pin-generator-box" readonly class="display" type="text">
+
+				<!-- <p  class="pin-mathcer-text">Pin Matcher</p> -->
+
+				<button id="generator-btn" class="generator-btn">Generate <br> Pin</button>
+
+			</div>
+
+			<div class="flex-box-div">
+				<input id="pin-matcher-box" type="text" class="display">
+				<div class="all-pad-buttons">
+					
+						<button type="button" value="7" class="pad-btn">7</button>
+						<button type="button" value="8" class="pad-btn">8</button>
+						<button type="button" value="9" class="pad-btn">9</button>
+					
+
+					
+						<button type="button" value="4" class="pad-btn">4</button>
+						<button type="button" value="5" class="pad-btn">5</button>
+						<button type="button" value="6" class="pad-btn">6</button>
+					
+
+					
+						<button type="button" value="1" class="pad-btn">1</button>
+						<button type="button" value="2" class="pad-btn">2</button>
+						<button type="button" value="3" class="pad-btn">3</button>
+					
+
+					
+						
+						<button type="button" value=">" class="pad-btn">></button>
+						<button type="button" value="0" class="pad-btn">0</button>
+						<button type="button" value="c" class="pad-btn">C</button>
+					
+				</div>
+
+
+				<button type="button" id="submit-btn" class="submit-btn">Submit</button>
+				<p  class="try-left"><span id="try-left">3</span> try left <span class="wait-msg"></span> </p>
+			</div>
+		</div>
+
+		<p id="pin-matched-msg" class="message">Pin Matched.. Historical door is opening for you..</p>
+
+
+
+		<p id="pin-wrong-meg" class="message">Pin Didn't Match, Please try again</p>
+
+	</div>
+	
+
+	<!-- javascript -->
+	<script src="script.js"></script>
+</body>
+</html>
